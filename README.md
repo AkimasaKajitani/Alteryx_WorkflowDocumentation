@@ -24,29 +24,29 @@ The following samples were generated using Google Gemini.
     - A workflow solving [Problem 3](https://projecteuler.net/problem=3) of [Project Euler](https://projecteuler.net/about). It calculates the largest prime factor of the number 600,851,475,143.
 
 ## Features
-- Generates reports consisting of the following sections:
-    - Workflow Basic Information
+- **Generates reports consisting of the following sections:**
+    - **Workflow Basic Information**
         - General info, Author info, Metadata, and Detailed settings.
-    - Tool Statistics
+    - **Tool Statistics**
         - Count of tools and tool types, Category statistics.
-    - Input/Output
+    - **Input/Output**
         - Input and Output summaries.
-    - Workflow Canvas Image
-    - Workflow Overview
-    - Python Code
-- Bilingual Support: LLM-generated workflow descriptions are available in both English and Japanese.
+    - **Workflow Canvas Image**
+    - **Workflow Overview**
+    - **Python Code**
+- **Bilingual Support**: LLM-generated workflow descriptions are available in both English and Japanese.
 
 ## Prerequisites
-- Data Privacy: Please be aware that the workflow body is sent to the LLM. Information contained within .yxmd/.yxmc/.yxwz files will be transmitted.
+- **Data Privacy**: Please be aware that the workflow body is sent to the LLM. Information contained within .yxmd/.yxmc/.yxwz files will be transmitted.
     - Raw data is not sent, but metadata (such as field names) and formulas will be included in the prompt.
-- LLM Access: This tool uses either the GenAI tool or a dedicated Gemini API macro.
+- **LLM Access**: This tool uses either the GenAI tool or a dedicated Gemini API macro.
     - An active LLM subscription/contract is required.
-- Model Compatibility: Developed primarily using Google Gemini (2.5 Flash). Using other LLMs or models may result in unexpected behavior.
-- File Setup: Workflows you wish to document should be saved in the folder specified in the Directory tool.
-- Canvas Images: You must extract icons for the workflow canvas images from icon.zip file.
-- Python Packages: Requires the following:
-    - networkx
-    - Pillow
+- **Model Compatibility**: Developed primarily using Google Gemini (2.5 Flash). Using other LLMs or models may result in unexpected behavior.
+- **File Setup**: Workflows you wish to document should be saved in the folder specified in the Directory tool.
+- **Canvas Images**: You must extract icons for the workflow canvas images from icon.zip file.
+- **Python Packages**: Requires the following:
+    - `networkx`
+    - `Pillow`
 
 ## Installation
 Please download the following files from GitHub. Extract the .yxzp file using Alteryx, and unzip the zip file using your preferred extraction tool.
@@ -65,26 +65,26 @@ Please download the following files from GitHub. Extract the .yxzp file using Al
 
 ## How to Use
 ### Install Additional Python Packages
-Start Alteryx Designer with Administrator privileges, open the workflow, and run it to install the required Python packages. If you are unfamiliar with this, right-click Designer and select "Run as Administrator," then execute install_python_pkg.yxmd.
+Start Alteryx Designer with **Administrator privileges**, open the workflow, and run it to install the required Python packages. If you are unfamiliar with this, right-click Designer and select "Run as Administrator," then execute install_python_pkg.yxmd.
 
 ### GenAI Version Preparation
 1. Create an LLM Connection in Alteryx One (Admin privileges required).
     - Using a high-speed model is recommended.
-2. Configure the LLM Override tool to use your LLM connection.
+2. Configure the **LLM Override tool** to use your LLM connection.
 
 ### Gemini Version Preparation
-1. Obtain a Gemini API key from Google AI Studio.
-2. Enter the API key into the Gemini Macro settings.
+1. Obtain a Gemini API key from **Google AI Studio**.
+2. Enter the API key into the **Gemini Macro** settings.
 
 ### Common Steps
-1. Extract and place workflow icon files into an icon folder located directly inside the folder where your workflows are saved.
-2. Save the files you want to document in a workflow folder (or update the Directory tool configuration to point to your desired folder).
-3. Set the language in the Text Input tool (ID 300). The default is English. To use Japanese, set the enabled column for the ja record to 1 and leave the en record blank.
+1. Extract and place workflow icon files into an `icon` folder located directly inside the folder where your workflows are saved.
+2. Save the files you want to document in a `workflow` folder (or update the Directory tool configuration to point to your desired folder).
+3. Set the language in the **Text Input tool (ID 300)**. The default is English. To use Japanese, set the `enabled` column for the `ja` record to `1` and leave the `en` record blank.
 4. Run the workflow.
 
 ## Important Notes
 - Expect a wait time during the LLM processing phase. Additionally, creating the canvas image via the Python tool takes a bit of time.
-- LIf you wish to skip the LLM processing, check the Detour Tool (ID 276) to divert the flow to the right.
+- LIf you wish to skip the LLM processing, check the **Detour Tool (ID 276)** to divert the flow to the right.
 - If you see the following error, you have reached the LLM rate limit. Please reduce the number of workflows processed simultaneously:
     >"Warning: Prompt (279): Error occurred in LLM response generation: 429 Client Error: Too Many Requests for url: https://us1.alteryxcloud.com/aims/v1/generatedContent "
 - For very large workflows, some LLMs or models may fail to process the request or stop outputting mid-way. Please consider switching models in such cases.
@@ -100,16 +100,16 @@ Start Alteryx Designer with Administrator privileges, open the workflow, and run
 | 6 | Python Code | XML Parsing |
 
 ## Unimplemented Features
-- LLM Cost Optimization: Only partially implemented (e.g., removing comment tool backgrounds and macro icons).
-- Tool Statistics: Detailed settings for each tool are not currently extracted. Pie chart colors do not match category colors (limitation of the Interactive Chart tool).
-- Workflow Canvas Image: Comment tool text and macro icons are not displayed.
-- Code Extraction: Code from the R Tool is not currently extracted.
+- **LLM Cost Optimization**: Only partially implemented (e.g., removing comment tool backgrounds and macro icons).
+- **Tool Statistics**: Detailed settings for each tool are not currently extracted. Pie chart colors do not match category colors (limitation of the Interactive Chart tool).
+- **Workflow Canvas Image**: Comment tool text and macro icons are not displayed.
+- **Code Extraction**: Code from the R Tool is not currently extracted.
 
 ## LLM Implementation Reference
 - The workflow XML is passed to the LLM almost as-is.
 - The goal is to eventually compress the transmitted data while maintaining output quality.
 - Tasks that can be done via XML parsing are handled locally to save on LLM costs and stabilize output.
-- The LLM output is requested in JSON format.
+- The LLM output is requested in **JSON format**.
 - In Gemini, providing separate "System Instructions" and "User Prompts" in different languages sometimes caused duplicate outputs. Therefore, all instructions are currently included in the main prompt body.
 - While LLMs default to Markdown, Alteryx handles JSON more effectively for downstream reporting tools to style the final document.
 
