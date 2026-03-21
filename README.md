@@ -43,7 +43,7 @@ The following samples were generated using Google Gemini.
     - An active LLM subscription/contract is required.
 - Model Compatibility: Developed primarily using Google Gemini (2.5 Flash). Using other LLMs or models may result in unexpected behavior.
 - File Setup: Workflows you wish to document should be saved in the folder specified in the Directory tool.
-- Canvas Images: You must extract icons for the workflow canvas images.
+- Canvas Images: You must extract icons for the workflow canvas images from icon.zip file.
 - Python Packages: Requires the following:
     - networkx
     - Pillow
