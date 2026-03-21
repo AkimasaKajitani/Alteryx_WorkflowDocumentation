@@ -1,0 +1,854 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="209" y="149" width="589" height="149" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Node</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Node</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="3">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
+            <Position x="618" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <XMLField>Properties_OuterXML</XMLField>
+              <XMLElement>Annotation</XMLElement>
+              <ChildValues value="True" />
+              <OuterXML value="True" />
+              <ParseRoot value="False" />
+              <IgnoreErrors value="False" />
+              <IncludeInOutput value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Annotation</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="___Record_ID___" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="ParentToolID" size="1073741823" source="Formula: [ParentToolID]+&quot;,&quot;+[ToolID]" type="V_WString" />
+                <Field name="ParentGuiSettings_Plugin" size="1073741823" source="Formula: [ParentGuiSettings_Plugin]+&quot;,&quot;+[GuiSettings_Plugin]" type="V_WString" />
+                <Field name="ToolID" size="2" type="V_String" />
+                <Field name="GuiSettings_Plugin" size="51" type="V_String" />
+                <Field name="Properties_OuterXML" size="1850" type="V_WString" />
+                <Field name="EngineSettings_EngineDll" size="28" type="V_String" />
+                <Field name="EngineSettings_EngineDllEntryPoint" size="19" type="V_String" />
+                <Field name="GuiSettings" size="32" type="V_String" />
+                <Field name="GuiSettings_Plugin_Plugin" size="51" type="V_String" />
+                <Field name="GuiSettings_Position_x" size="4" type="V_String" />
+                <Field name="GuiSettings_Position_y" size="3" type="V_String" />
+                <Field name="Annotation" size="93" type="V_String" />
+                <Field name="DisplayMode" size="1" type="V_String" />
+                <Field name="Name" size="1" type="V_String" />
+                <Field name="Name_OuterXML" size="7" type="V_String" />
+                <Field name="DefaultAnnotationText" size="12" type="V_WString" />
+                <Field name="DefaultAnnotationText_OuterXML" size="59" type="V_WString" />
+                <Field name="Left" size="1" type="V_String" />
+                <Field name="Left_value" size="5" type="V_String" />
+                <Field name="Left_OuterXML" size="21" type="V_String" />
+                <Field name="Annotation_OuterXML" size="224" type="V_WString" />
+                <Field name="AnnotationText" size="5" type="V_String" />
+                <Field name="AnnotationText_OuterXML" size="38" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxXMLParse" />
+        </Node>
+        <Node ToolID="4">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="714" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="GuiSettings" selected="False" />
+                <SelectField field="Annotation" selected="False" />
+                <SelectField field="DisplayMode" selected="True" rename="Annotation_DisplayMode" />
+                <SelectField field="Name" selected="True" rename="Annotation_Name" />
+                <SelectField field="Name_OuterXML" selected="False" />
+                <SelectField field="DefaultAnnotationText_OuterXML" selected="False" />
+                <SelectField field="Left" selected="False" />
+                <SelectField field="Left_value" selected="True" rename="Annotation_Left_value" />
+                <SelectField field="Left_OuterXML" selected="False" />
+                <SelectField field="Annotation_OuterXML" selected="False" />
+                <SelectField field="AnnotationText_OuterXML" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="___Record_ID___" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="ParentToolID" size="1073741823" source="Formula: [ParentToolID]+&quot;,&quot;+[ToolID]" type="V_WString" />
+                <Field name="ParentGuiSettings_Plugin" size="1073741823" source="Formula: [ParentGuiSettings_Plugin]+&quot;,&quot;+[GuiSettings_Plugin]" type="V_WString" />
+                <Field name="ToolID" size="2" type="V_String" />
+                <Field name="GuiSettings_Plugin" size="51" type="V_String" />
+                <Field name="Properties_OuterXML" size="1850" type="V_WString" />
+                <Field name="EngineSettings_EngineDll" size="28" type="V_String" />
+                <Field name="EngineSettings_EngineDllEntryPoint" size="19" type="V_String" />
+                <Field name="GuiSettings_Plugin_Plugin" size="51" type="V_String" />
+                <Field name="GuiSettings_Position_x" size="4" type="V_String" />
+                <Field name="GuiSettings_Position_y" size="3" type="V_String" />
+                <Field name="Annotation_DisplayMode" size="1" type="V_String" />
+                <Field name="Annotation_Name" size="1" type="V_String" />
+                <Field name="DefaultAnnotationText" size="12" type="V_WString" />
+                <Field name="Annotation_Left_value" size="5" type="V_String" />
+                <Field name="AnnotationText" size="5" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="5">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
+            <Position x="426" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <XMLField>GuiSettings_OuterXML</XMLField>
+              <XMLElement />
+              <ChildValues value="True" />
+              <OuterXML value="False" />
+              <ParseRoot value="True" />
+              <IgnoreErrors value="False" />
+              <IncludeInOutput value="True" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>GuiSettings</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="___Record_ID___" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="ParentToolID" size="1073741823" source="Formula: [ParentToolID]+&quot;,&quot;+[ToolID]" type="V_WString" />
+                <Field name="ParentGuiSettings_Plugin" size="1073741823" source="Formula: [ParentGuiSettings_Plugin]+&quot;,&quot;+[GuiSettings_Plugin]" type="V_WString" />
+                <Field name="ToolID" size="2" type="V_String" />
+                <Field name="GuiSettings_Plugin" size="51" type="V_String" />
+                <Field name="GuiSettings_OuterXML" size="147" type="V_String" />
+                <Field name="Properties_OuterXML" size="1850" type="V_WString" />
+                <Field name="EngineSettings_EngineDll" size="28" type="V_String" />
+                <Field name="EngineSettings_EngineDllEntryPoint" size="19" type="V_String" />
+                <Field name="GuiSettings" size="32" type="V_String" />
+                <Field name="Plugin" size="51" type="V_String" />
+                <Field name="Position" size="1" type="V_String" />
+                <Field name="Position_x" size="4" type="V_String" />
+                <Field name="Position_y" size="3" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxXMLParse" />
+        </Node>
+        <Node ToolID="6">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="522" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="GuiSettings_OuterXML" selected="False" />
+                <SelectField field="Plugin" selected="True" rename="GuiSettings_Plugin_Plugin" />
+                <SelectField field="Position" selected="False" />
+                <SelectField field="Position_x" selected="True" rename="GuiSettings_Position_x" />
+                <SelectField field="Position_y" selected="True" rename="GuiSettings_Position_y" />
+                <SelectField field="Position_width" selected="True" rename="GuiSettings_Position_width" />
+                <SelectField field="Position_height" selected="True" rename="GuiSettings_Position_height" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="___Record_ID___" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="ParentToolID" size="1073741823" source="Formula: [ParentToolID]+&quot;,&quot;+[ToolID]" type="V_WString" />
+                <Field name="ParentGuiSettings_Plugin" size="1073741823" source="Formula: [ParentGuiSettings_Plugin]+&quot;,&quot;+[GuiSettings_Plugin]" type="V_WString" />
+                <Field name="ToolID" size="2" type="V_String" />
+                <Field name="GuiSettings_Plugin" size="51" type="V_String" />
+                <Field name="Properties_OuterXML" size="1850" type="V_WString" />
+                <Field name="EngineSettings_EngineDll" size="28" type="V_String" />
+                <Field name="EngineSettings_EngineDllEntryPoint" size="19" type="V_String" />
+                <Field name="GuiSettings" size="32" type="V_String" />
+                <Field name="GuiSettings_Plugin_Plugin" size="51" type="V_String" />
+                <Field name="GuiSettings_Position_x" size="4" type="V_String" />
+                <Field name="GuiSettings_Position_y" size="3" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+        <Node ToolID="7">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.XMLParse.XMLParse">
+            <Position x="234" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <XMLField>ChildNodes_OuterXML</XMLField>
+              <XMLElement>Node</XMLElement>
+              <ChildValues value="True" />
+              <OuterXML value="True" />
+              <ParseRoot value="False" />
+              <IgnoreErrors value="False" />
+              <IncludeInOutput value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>Nodes</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="___Record_ID___" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="ParentToolID" size="1073741823" source="Formula: [ParentToolID]+&quot;,&quot;+[ToolID]" type="V_WString" />
+                <Field name="ParentGuiSettings_Plugin" size="1073741823" source="Formula: [ParentGuiSettings_Plugin]+&quot;,&quot;+[GuiSettings_Plugin]" type="V_WString" />
+                <Field name="Node" size="58" type="V_String" />
+                <Field name="ToolID" size="2" type="V_String" />
+                <Field name="GuiSettings" size="32" type="V_String" />
+                <Field name="GuiSettings_Plugin" size="51" type="V_String" />
+                <Field name="GuiSettings_OuterXML" size="147" type="V_String" />
+                <Field name="Properties" size="66" type="V_String" />
+                <Field name="Properties_OuterXML" size="1850" type="V_WString" />
+                <Field name="EngineSettings" size="1" type="V_String" />
+                <Field name="EngineSettings_EngineDll" size="28" type="V_String" />
+                <Field name="EngineSettings_EngineDllEntryPoint" size="19" type="V_String" />
+                <Field name="EngineSettings_OuterXML" size="100" type="V_String" />
+                <Field name="Node_OuterXML" size="2179" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxXMLParse" />
+        </Node>
+        <Node ToolID="8">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="330" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Node" selected="False" />
+                <SelectField field="GuiSettings" selected="False" />
+                <SelectField field="Properties" selected="False" />
+                <SelectField field="EngineSettings" selected="False" />
+                <SelectField field="EngineSettings_OuterXML" selected="False" />
+                <SelectField field="Node_OuterXML" selected="False" />
+                <SelectField field="ChildNodes" selected="False" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="___Record_ID___" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="ParentToolID" size="1073741823" source="Formula: [ParentToolID]+&quot;,&quot;+[ToolID]" type="V_WString" />
+                <Field name="ParentGuiSettings_Plugin" size="1073741823" source="Formula: [ParentGuiSettings_Plugin]+&quot;,&quot;+[GuiSettings_Plugin]" type="V_WString" />
+                <Field name="ToolID" size="2" type="V_String" />
+                <Field name="GuiSettings_Plugin" size="51" type="V_String" />
+                <Field name="GuiSettings_OuterXML" size="147" type="V_String" />
+                <Field name="Properties_OuterXML" size="1850" type="V_WString" />
+                <Field name="EngineSettings_EngineDll" size="28" type="V_String" />
+                <Field name="EngineSettings_EngineDllEntryPoint" size="19" type="V_String" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="78" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="True" />
+          <Name>Input14</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <FileInput>
+            <Configuration>
+              <Passwords />
+              <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\MyDoc\AYX\Documentation\template_GetChildNode.yxdb</File>
+              <FormatSpecificOptions />
+            </Configuration>
+          </FileInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText>template_GetChildNode.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="___Record_ID___" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="ParentToolID" size="1073741823" source="File: C:\MyDoc\AYX\Documentation\template_GetChildNode.yxdb" type="V_WString" />
+            <Field name="ParentGuiSettings_Plugin" size="1073741823" source="File: C:\MyDoc\AYX\Documentation\template_GetChildNode.yxdb" type="V_WString" />
+            <Field name="ChildNodes_OuterXML" size="1073741823" source="File: C:\MyDoc\AYX\Documentation\template_GetChildNode.yxdb" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1398" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>OutputR</Name>
+          <Abbrev>R</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="1049" y="149" width="313" height="225" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>Create Repeat data</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Create Repeat data</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="1">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+            <Position x="1170" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <FormulaFields>
+                <FormulaField expression="[ParentToolID]+&quot;,&quot;+[ToolID]" field="ParentToolID" size="1073741823" type="V_WString" enabled="true" />
+                <FormulaField expression="[ParentGuiSettings_Plugin]+&quot;,&quot;+[GuiSettings_Plugin]" field="ParentGuiSettings_Plugin" size="1073741823" type="V_WString" enabled="true" />
+              </FormulaFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>ParentToolID = [ParentToolID]+","+[ToolID]
+ParentGuiSettings_Plugin = [ParentGui...</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="___Record_ID___" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="ParentToolID" size="1073741823" source="Formula: [ParentToolID]+&quot;,&quot;+[ToolID]" type="V_WString" />
+                <Field name="ParentGuiSettings_Plugin" size="1073741823" source="Formula: [ParentGuiSettings_Plugin]+&quot;,&quot;+[GuiSettings_Plugin]" type="V_WString" />
+                <Field name="ToolID" size="2" type="V_String" />
+                <Field name="GuiSettings_Plugin" size="51" type="V_String" />
+                <Field name="Properties_OuterXML" size="1850" type="V_WString" />
+                <Field name="EngineSettings_EngineDll" size="28" type="V_String" />
+                <Field name="EngineSettings_EngineDllEntryPoint" size="19" type="V_String" />
+                <Field name="GuiSettings_Plugin_Plugin" size="51" type="V_String" />
+                <Field name="GuiSettings_Position_x" size="4" type="V_String" />
+                <Field name="GuiSettings_Position_y" size="3" type="V_String" />
+                <Field name="Annotation_DisplayMode" size="1" type="V_String" />
+                <Field name="Annotation_Name" size="1" type="V_String" />
+                <Field name="DefaultAnnotationText" size="12" type="V_WString" />
+                <Field name="Annotation_Left_value" size="5" type="V_String" />
+                <Field name="AnnotationText" size="5" type="V_String" />
+                <Field name="ChildNodes_OuterXML" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+        </Node>
+        <Node ToolID="10">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+            <Position x="1074" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <Mode>Simple</Mode>
+              <Simple>
+                <Operator>IsNotNull</Operator>
+                <Field>ChildNodes_OuterXML</Field>
+                <Operands>
+                  <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+                  <DateType>fixed</DateType>
+                  <PeriodDate>2026-03-08 12:11:23</PeriodDate>
+                  <PeriodType>
+                  </PeriodType>
+                  <PeriodCount>0</PeriodCount>
+                  <Operand>
+                  </Operand>
+                  <StartDate>2026-03-08 12:11:23</StartDate>
+                  <EndDate>2026-03-08 12:11:23</EndDate>
+                </Operands>
+              </Simple>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText>!IsNull([ChildNodes_OuterXML])</DefaultAnnotationText>
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="True">
+              <RecordInfo>
+                <Field name="___Record_ID___" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="ParentToolID" size="1073741823" source="Formula: [ParentToolID]+&quot;,&quot;+[ToolID]" type="V_WString" />
+                <Field name="ParentGuiSettings_Plugin" size="1073741823" source="Formula: [ParentGuiSettings_Plugin]+&quot;,&quot;+[GuiSettings_Plugin]" type="V_WString" />
+                <Field name="ToolID" size="2" type="V_String" />
+                <Field name="GuiSettings_Plugin" size="51" type="V_String" />
+                <Field name="Properties_OuterXML" size="1850" type="V_WString" />
+                <Field name="EngineSettings_EngineDll" size="28" type="V_String" />
+                <Field name="EngineSettings_EngineDllEntryPoint" size="19" type="V_String" />
+                <Field name="GuiSettings_Plugin_Plugin" size="51" type="V_String" />
+                <Field name="GuiSettings_Position_x" size="4" type="V_String" />
+                <Field name="GuiSettings_Position_y" size="3" type="V_String" />
+                <Field name="Annotation_DisplayMode" size="1" type="V_String" />
+                <Field name="Annotation_Name" size="1" type="V_String" />
+                <Field name="DefaultAnnotationText" size="12" type="V_WString" />
+                <Field name="Annotation_Left_value" size="5" type="V_String" />
+                <Field name="AnnotationText" size="5" type="V_String" />
+                <Field name="ChildNodes_OuterXML" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+            <MetaInfo connection="False">
+              <RecordInfo>
+                <Field name="___Record_ID___" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="ParentToolID" size="1073741823" source="Formula: [ParentToolID]+&quot;,&quot;+[ToolID]" type="V_WString" />
+                <Field name="ParentGuiSettings_Plugin" size="1073741823" source="Formula: [ParentGuiSettings_Plugin]+&quot;,&quot;+[GuiSettings_Plugin]" type="V_WString" />
+                <Field name="ToolID" size="2" type="V_String" />
+                <Field name="GuiSettings_Plugin" size="51" type="V_String" />
+                <Field name="Properties_OuterXML" size="1850" type="V_WString" />
+                <Field name="EngineSettings_EngineDll" size="28" type="V_String" />
+                <Field name="EngineSettings_EngineDllEntryPoint" size="19" type="V_String" />
+                <Field name="GuiSettings_Plugin_Plugin" size="51" type="V_String" />
+                <Field name="GuiSettings_Position_x" size="4" type="V_String" />
+                <Field name="GuiSettings_Position_y" size="3" type="V_String" />
+                <Field name="Annotation_DisplayMode" size="1" type="V_String" />
+                <Field name="Annotation_Name" size="1" type="V_String" />
+                <Field name="DefaultAnnotationText" size="12" type="V_WString" />
+                <Field name="Annotation_Left_value" size="5" type="V_String" />
+                <Field name="AnnotationText" size="5" type="V_String" />
+                <Field name="ChildNodes_OuterXML" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+        </Node>
+        <Node ToolID="11">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+            <Position x="1278" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="___Record_ID___" selected="True" />
+                <SelectField field="ParentToolID" selected="True" />
+                <SelectField field="ParentGuiSettings_Plugin" selected="True" />
+                <SelectField field="ToolID" selected="False" />
+                <SelectField field="GuiSettings_Plugin" selected="False" />
+                <SelectField field="Properties_OuterXML" selected="False" />
+                <SelectField field="EngineSettings_EngineDll" selected="False" />
+                <SelectField field="EngineSettings_EngineDllEntryPoint" selected="False" />
+                <SelectField field="ChildNodes_OuterXML" selected="True" />
+                <SelectField field="GuiSettings_Plugin_Plugin" selected="False" />
+                <SelectField field="GuiSettings_Position_x" selected="False" />
+                <SelectField field="GuiSettings_Position_y" selected="False" />
+                <SelectField field="GuiSettings_Position_width" selected="False" />
+                <SelectField field="GuiSettings_Position_height" selected="False" />
+                <SelectField field="Annotation_DisplayMode" selected="False" />
+                <SelectField field="Annotation_Name" selected="False" />
+                <SelectField field="DefaultAnnotationText" selected="False" />
+                <SelectField field="Annotation_Left_value" selected="False" />
+                <SelectField field="AnnotationText" selected="False" />
+                <SelectField field="EngineSettings_Macro" selected="False" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="___Record_ID___" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="ParentToolID" size="1073741823" source="Formula: [ParentToolID]+&quot;,&quot;+[ToolID]" type="V_WString" />
+                <Field name="ParentGuiSettings_Plugin" size="1073741823" source="Formula: [ParentGuiSettings_Plugin]+&quot;,&quot;+[GuiSettings_Plugin]" type="V_WString" />
+                <Field name="ChildNodes_OuterXML" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+        </Node>
+      </ChildNodes>
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1278" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="ChildNodes_OuterXML" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="___Record_ID___" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="ParentToolID" size="1073741823" source="Formula: [ParentToolID]+&quot;,&quot;+[ToolID]" type="V_WString" />
+            <Field name="ParentGuiSettings_Plugin" size="1073741823" source="Formula: [ParentGuiSettings_Plugin]+&quot;,&quot;+[GuiSettings_Plugin]" type="V_WString" />
+            <Field name="ToolID" size="2" type="V_String" />
+            <Field name="GuiSettings_Plugin" size="51" type="V_String" />
+            <Field name="Properties_OuterXML" size="1850" type="V_WString" />
+            <Field name="EngineSettings_EngineDll" size="28" type="V_String" />
+            <Field name="EngineSettings_EngineDllEntryPoint" size="19" type="V_String" />
+            <Field name="GuiSettings_Plugin_Plugin" size="51" type="V_String" />
+            <Field name="GuiSettings_Position_x" size="4" type="V_String" />
+            <Field name="GuiSettings_Position_y" size="3" type="V_String" />
+            <Field name="Annotation_DisplayMode" size="1" type="V_String" />
+            <Field name="Annotation_Name" size="1" type="V_String" />
+            <Field name="DefaultAnnotationText" size="12" type="V_WString" />
+            <Field name="Annotation_Left_value" size="5" type="V_String" />
+            <Field name="AnnotationText" size="5" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1374" y="414" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output13</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxGuiToolkit.ToolContainer.ToolContainer">
+        <Position x="821" y="149" width="205" height="213" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Caption>for last iterative</Caption>
+          <Style TextColor="#314c4a" FillColor="#ecf2f2" BorderColor="#314c4a" Transparency="25" Margin="25" />
+          <Disabled value="False" />
+          <Folded value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>for last iterative</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <ChildNodes>
+        <Node ToolID="18">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+            <Position x="942" y="198" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <ByName_ErrorMode>Warning</ByName_ErrorMode>
+              <ByName_OutputMode>All</ByName_OutputMode>
+              <Mode>ByName</Mode>
+              <SetOutputOrder value="False" />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="___Record_ID___" source="RecordID: Starting Value=1" type="Int32" />
+                <Field name="ParentToolID" size="1073741823" source="Formula: [ParentToolID]+&quot;,&quot;+[ToolID]" type="V_WString" />
+                <Field name="ParentGuiSettings_Plugin" size="1073741823" source="Formula: [ParentGuiSettings_Plugin]+&quot;,&quot;+[GuiSettings_Plugin]" type="V_WString" />
+                <Field name="ToolID" size="2" type="V_String" />
+                <Field name="GuiSettings_Plugin" size="51" type="V_String" />
+                <Field name="Properties_OuterXML" size="1850" type="V_WString" />
+                <Field name="EngineSettings_EngineDll" size="28" type="V_String" />
+                <Field name="EngineSettings_EngineDllEntryPoint" size="19" type="V_String" />
+                <Field name="GuiSettings_Plugin_Plugin" size="51" type="V_String" />
+                <Field name="GuiSettings_Position_x" size="4" type="V_String" />
+                <Field name="GuiSettings_Position_y" size="3" type="V_String" />
+                <Field name="Annotation_DisplayMode" size="1" type="V_String" />
+                <Field name="Annotation_Name" size="1" type="V_String" />
+                <Field name="DefaultAnnotationText" size="12" type="V_WString" />
+                <Field name="Annotation_Left_value" size="5" type="V_String" />
+                <Field name="AnnotationText" size="5" type="V_String" />
+                <Field name="ChildNodes_OuterXML" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+        </Node>
+        <Node ToolID="19">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.TextInput.TextInput">
+            <Position x="846" y="246" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <NumRows value="0" />
+              <Fields>
+                <Field name="ChildNodes_OuterXML" />
+              </Fields>
+              <Data />
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <AnnotationText>ChildNodes_OuterXML header</AnnotationText>
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+            <MetaInfo connection="Output">
+              <RecordInfo>
+                <Field name="ChildNodes_OuterXML" size="1073741823" source="TextInput:" type="V_WString" />
+              </RecordInfo>
+            </MetaInfo>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextInput" />
+        </Node>
+      </ChildNodes>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="1" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="932" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>GetChildNode</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="2f2ed249-4b98-4bee-a81b-830e36e87f8e" />
+      <Telemetry>
+        <PreviousWorkflowId value="510478d6-0e19-4b89-a86d-f7cba112d91b" />
+        <OriginWorkflowId value="510478d6-0e19-4b89-a86d-f7cba112d91b" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>質問</Description>
+          <Name>タブ (15)</Name>
+          <ToolId value="15" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>マクロ入力 (14)</Name>
+              <ToolId value="14" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>マクロ出力 (12)</Name>
+              <ToolId value="12" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>マクロ出力 (13)</Name>
+              <ToolId value="13" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input14</Input>
+        <Output>OutputR</Output>
+        <IterationLimit value="100" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AutoByName</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="12" Selected="False" />
+        <Tool ToolId="13" Selected="False" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

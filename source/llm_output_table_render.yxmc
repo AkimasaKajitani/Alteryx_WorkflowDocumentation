@@ -1,0 +1,982 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2025.2" RunE2="T">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DynamicRename.DynamicRename">
+        <Position x="558" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <RenameMode>RightInputRows</RenameMode>
+          <Fields orderChanged="False">
+            <Field name="___Record_ID___" />
+            <Field name="row_id" />
+            <Field name="type_detail2" />
+            <Field name="0" />
+            <Field name="1" />
+            <Field name="2" />
+            <Field name="*Unknown" />
+          </Fields>
+          <Expression />
+          <NamesFromRows>
+            <OnError>Ignore</OnError>
+            <InputMode>Mapped</InputMode>
+            <OldName>type_detail2</OldName>
+            <NewName>JSON_ValueString</NewName>
+          </NamesFromRows>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="___Record_ID___" source="CrossTab:Group:Concat:" type="Int32" />
+            <Field name="row_id" source="CrossTab:Group:Concat:" type="Int32" />
+            <Field name="type_detail2" source="CrossTab:Group:Concat:" type="Int32" />
+            <Field name="ツール名" size="2048" source="CrossTab:Header:type_detail3:0:Concat:" type="V_WString" />
+            <Field name="ツールID" size="2048" source="CrossTab:Header:type_detail3:1:Concat:" type="V_WString" />
+            <Field name="ツールが行っている内容" size="2048" source="CrossTab:Header:type_detail3:2:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDynamicRename" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="342" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[___Record_ID___]=0 AND [row_id]=11</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[___Record_ID___]=0 AND [row_id]=11</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="___Record_ID___" source="TextInput:" type="Int32" />
+            <Field name="row_id" source="TextInput:" type="Int32" />
+            <Field name="JSON_ValueString" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="type_detail2" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="___Record_ID___" source="TextInput:" type="Int32" />
+            <Field name="row_id" source="TextInput:" type="Int32" />
+            <Field name="JSON_ValueString" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="type_detail2" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="342" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[___Record_ID___]=0 AND [row_id]=11</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[___Record_ID___]=0 AND [row_id]=11</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="___Record_ID___" source="TextInput:" type="Int32" />
+            <Field name="row_id" source="TextInput:" type="Int32" />
+            <Field name="JSON_ValueString" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="type_detail2" source="TextInput:" type="Int32" />
+            <Field name="type_detail3" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="___Record_ID___" source="TextInput:" type="Int32" />
+            <Field name="row_id" source="TextInput:" type="Int32" />
+            <Field name="JSON_ValueString" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="type_detail2" source="TextInput:" type="Int32" />
+            <Field name="type_detail3" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="PortfolioPluginsGui.ComposerTable.PortfolioComposerTable">
+        <Position x="750" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TableMode>Basic</TableMode>
+          <GroupingFields orderChanged="True">
+            <Field name="row_id" />
+            <Field name="___Record_ID___" />
+          </GroupingFields>
+          <Width>100%</Width>
+          <ShowHeader value="True" />
+          <ShowBarGraph value="False" />
+          <TableFields orderChanged="False">
+            <Field name="ツール名" selected="True" Alignment="Left" />
+            <Field name="ツールID" selected="True" Alignment="Left" />
+            <Field name="ツールが行っている内容" selected="True" Alignment="Left" />
+            <Field name="*Unknown" selected="True" Alignment="Left" />
+            <Field name="___Record_ID___" selected="False" />
+            <Field name="row_id" selected="False" />
+            <Field name="type_detail2" selected="False" />
+            <Field name="___RecordID___" selected="False" />
+          </TableFields>
+          <TableStyles>
+            <Style Name="Data" Font="--Yu Gothic Regular" Size="8" TextColor="#000000" BackColor="#ffffff" AltColor="#f0f0f0" RowGroup="1" />
+            <Style Name="Header" Font="--Yu Gothic Regular" Size="9" TextColor="#000000" BackColor="#dbdbdb" />
+            <Style Name="Borders" Width="1" DataColor="#000000" HeaderColor="#000000" RowBorder="None" BasicColBorder="Default (Use Per Column Setting)" />
+            <Style Name="Table" CellPadding="2" ColumnPadding="0" TableBorder="true" Width="1" BorderColor="#000000" />
+          </TableStyles>
+          <StyleRules />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Basic Table</AnnotationText>
+          <DefaultAnnotationText>ベーシックテーブル</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="row_id" source="CrossTab:Group:Concat:" type="Int32" />
+            <Field name="___Record_ID___" source="CrossTab:Group:Concat:" type="Int32" />
+            <Field name="Table" size="1073741823" source="Report:Table:Basic:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="PortfolioPluginsEngine.dll" EngineDllEntryPoint="AlteryxPortfolioComposerTablePlugin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="846" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output14</Name>
+          <Abbrev />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Output</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="90" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>RecordID</Name>
+          <DefaultAnnotationText>RecordID</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>InputHeader</Name>
+          <Abbrev>H</Abbrev>
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="18" />
+              <Fields>
+                <Field name="___Record_ID___" />
+                <Field name="row_id" />
+                <Field name="JSON_ValueString" />
+                <Field name="type_detail2" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>0</c>
+                  <c>11</c>
+                  <c>ツール名</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>11</c>
+                  <c>ツールID</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>11</c>
+                  <c>ツールが行っている内容</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>14</c>
+                  <c>ツール名</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>14</c>
+                  <c>ツールID</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>14</c>
+                  <c>ツールが行っている内容</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>17</c>
+                  <c>ツール名</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>17</c>
+                  <c>ツールID</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>17</c>
+                  <c>ツールが行っている内容</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>20</c>
+                  <c>ツール名</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>20</c>
+                  <c>ツールID</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>20</c>
+                  <c>ツールが行っている内容</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>5</c>
+                  <c>フィールド名</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>5</c>
+                  <c>データ型</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>5</c>
+                  <c>内容</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>7</c>
+                  <c>フィールド名</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>7</c>
+                  <c>データ型</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>7</c>
+                  <c>内容</c>
+                  <c>2</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="___Record_ID___" source="TextInput:" type="Int32" />
+            <Field name="row_id" source="TextInput:" type="Int32" />
+            <Field name="JSON_ValueString" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="type_detail2" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.ControlParam.ControlParam">
+        <Position x="282" y="54" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>RowID</Name>
+          <AnnotationText>RowID</AnnotationText>
+          <DefaultAnnotationText>RowID</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>InputD</Name>
+          <Abbrev>D</Abbrev>
+          <ShowFieldMap value="True" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="27" />
+              <Fields>
+                <Field name="___Record_ID___" />
+                <Field name="row_id" />
+                <Field name="JSON_ValueString" />
+                <Field name="type_detail2" />
+                <Field name="type_detail3" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>0</c>
+                  <c>11</c>
+                  <c>Text Input</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>11</c>
+                  <c>4</c>
+                  <c>0</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>11</c>
+                  <c>解析対象となる数値「600851475143」を「Number」というフィールドに設定します。</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>11</c>
+                  <c>Generate Rows</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>11</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>11</c>
+                  <c>入力された「Number」フィールドの値の平方根以下の奇数を生成し、「RowCount」という新しい整数フィールドに出力します。具体的には、1から始まり、各ステップで2を加えながら、「RowCount」が「Number」の平方根以下である限り数値を生成し続けます。</c>
+                  <c>1</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>14</c>
+                  <c>Filter</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>14</c>
+                  <c>3</c>
+                  <c>0</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>14</c>
+                  <c>前のステップで生成された「RowCount」の各値が「Number」を割り切れるかどうかを判定します。割り切れる（余りが0になる）「RowCount」のみが「True」出力に送られ、次の工程に進みます。</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>17</c>
+                  <c>Generate Rows</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>17</c>
+                  <c>5</c>
+                  <c>0</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>17</c>
+                  <c>前のフィルタで抽出された各「RowCount」の値に対して、2から始まる「RowCount2」という新しい整数フィールドを生成します。「RowCount」が「RowCount2」で割り切れず、かつ「RowCount」が「RowCount2」以上である限り、「RowCount2」を1ずつ増やしていきます。このループは、「RowCount」が素数である場合のみ、「RowCount2」が最終的に「RowCount」に達するような振る舞いをします（ただし、出力される最終の「RowCount2」は「RowCou...</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>17</c>
+                  <c>Filter</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>17</c>
+                  <c>6</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>17</c>
+                  <c>「Generate Rows (5)」ツールから出力されたレコードの中から、「RowCount」が「RowCount2」と「1」を足した値に等しいものだけを通過させます。この条件は、元の「RowCount」が素数である場合にのみ真となり、結果として素数である約数のみが次の工程に進みます。</c>
+                  <c>1</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>20</c>
+                  <c>Summarize</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>20</c>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>20</c>
+                  <c>素数として特定された「RowCount」フィールドの値の中から最大値を見つけ、その結果を「Max_RowCount」という新しいフィールド名で出力します。</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>20</c>
+                  <c>Browse</c>
+                  <c>1</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>20</c>
+                  <c>10</c>
+                  <c>1</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>20</c>
+                  <c>ワークフローによって計算された最大の素因数（「Max_RowCount」）の結果を表示し、ユーザーが確認できるようにします。</c>
+                  <c>1</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>5</c>
+                  <c>Number</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>5</c>
+                  <c>Int64 (推測)</c>
+                  <c>0</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>5</c>
+                  <c>最大の素因数を求めたい対象の数値。このワークフローでは「600851475143」が設定されています。</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>7</c>
+                  <c>Max_RowCount</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>7</c>
+                  <c>Int32</c>
+                  <c>0</c>
+                  <c>1</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>7</c>
+                  <c>入力された数値の最大の素因数。</c>
+                  <c>0</c>
+                  <c>2</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Input</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="___Record_ID___" source="TextInput:" type="Int32" />
+            <Field name="row_id" source="TextInput:" type="Int32" />
+            <Field name="JSON_ValueString" size="1073741823" source="TextInput:" type="V_WString" />
+            <Field name="type_detail2" source="TextInput:" type="Int32" />
+            <Field name="type_detail3" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="438" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="___Record_ID___" />
+            <Field field="row_id" />
+            <Field field="type_detail2" />
+          </GroupFields>
+          <HeaderField field="type_detail3" />
+          <DataField field="JSON_ValueString" />
+          <Methods>
+            <Method method="Concat" />
+            <Separator>,</Separator>
+            <FieldSize value="2048" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="___Record_ID___" source="CrossTab:Group:Concat:" type="Int32" />
+            <Field name="row_id" source="CrossTab:Group:Concat:" type="Int32" />
+            <Field name="type_detail2" source="CrossTab:Group:Concat:" type="Int32" />
+            <Field name="0" size="2048" source="CrossTab:Header:type_detail3:0:Concat:" type="V_WString" />
+            <Field name="1" size="2048" source="CrossTab:Header:type_detail3:1:Concat:" type="V_WString" />
+            <Field name="2" size="2048" source="CrossTab:Header:type_detail3:2:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="342" y="186" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="186" y="354" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>Update value</AnnotationText>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Label.Label">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Label.Label">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Label.Label">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="654" y="354" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="___Record_ID___" order="Ascending" />
+            <Field field="row_id" order="Ascending" />
+            <Field field="type_detail2" order="Ascending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <AnnotationText>sort</AnnotationText>
+          <DefaultAnnotationText>___Record_ID___ - 昇順
+row_id - 昇順
+type_detail2 - 昇順</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="___Record_ID___" source="CrossTab:Group:Concat:" type="Int32" />
+            <Field name="row_id" source="CrossTab:Group:Concat:" type="Int32" />
+            <Field name="type_detail2" source="CrossTab:Group:Concat:" type="Int32" />
+            <Field name="ツール名" size="2048" source="CrossTab:Header:type_detail3:0:Concat:" type="V_WString" />
+            <Field name="ツールID" size="2048" source="CrossTab:Header:type_detail3:1:Concat:" type="V_WString" />
+            <Field name="ツールが行っている内容" size="2048" source="CrossTab:Header:type_detail3:2:Concat:" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="5" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="5" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Question" />
+      <Destination ToolID="8" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="9" Connection="Question" />
+      <Destination ToolID="8" Connection="Question" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="6" Connection="Question" />
+      <Destination ToolID="11" Connection="Question" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="9" Connection="Question" />
+      <Destination ToolID="11" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="8" Connection="Action" />
+      <Destination ToolID="7" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="11" Connection="Action" />
+      <Destination ToolID="10" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <RunWithE2 value="True" />
+    <DefaultTZ value="Local" />
+    <SortedGrouping value="True" />
+    <PredictiveToolsCodePage value="932" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <IsTemplate value="False" />
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.RecordID</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>ControlParam.RowID</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>マクロ出力 (14)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>llm_output_table_render</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+      <WorkflowId value="7b181165-a0a5-4bb3-ac02-d989fb4e8af1" />
+      <Telemetry>
+        <PreviousWorkflowId value="78001ec0-21e8-4d0f-83b0-d7c95385b75a" />
+        <OriginWorkflowId value="78001ec0-21e8-4d0f-83b0-d7c95385b75a" />
+      </Telemetry>
+      <PlatformWorkflowId value="" />
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="8" />
+              <Expression>"[___Record_ID___]="+[#1]+" AND [row_id]="+[#2]</Expression>
+              <Destination>7/Expression</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+            <Action>
+              <Type>UpdateValueFormula</Type>
+              <Description />
+              <ToolId value="11" />
+              <Expression>"[___Record_ID___]="+[#1]+" AND [row_id]="+[#2]</Expression>
+              <Destination>10/Expression</Destination>
+              <Mode>Expression</Mode>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>質問</Description>
+          <Name>タブ (2)</Name>
+          <ToolId value="2" />
+          <Questions>
+            <Question>
+              <Type>Label</Type>
+              <Description>H input</Description>
+              <Name>ラベル (15)</Name>
+              <ToolId value="15" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>マクロ入力 (3)</Name>
+              <ToolId value="3" />
+            </Question>
+            <Question>
+              <Type>Label</Type>
+              <Description>D input</Description>
+              <Name>ラベル (16)</Name>
+              <ToolId value="16" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>マクロ入力 (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>Label</Type>
+              <Description>Control Parameter input</Description>
+              <Name>ラベル (17)</Name>
+              <ToolId value="17" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>___RecordID___</Description>
+              <Name>RecordID</Name>
+              <ToolId value="6" />
+            </Question>
+            <Question>
+              <Type>ControlParam</Type>
+              <Description>RowID</Description>
+              <Name>RowID</Name>
+              <ToolId value="9" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description />
+              <Name>マクロ出力 (14)</Name>
+              <ToolId value="14" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="30" />
+      <MacroInputs />
+      <MacroOutputs />
+      <BatchMacro>
+        <OutputMode>AllSame</OutputMode>
+        <ControlParams>
+          <ControlParam>
+            <Name>RecordID</Name>
+            <Description>___RecordID___</Description>
+          </ControlParam>
+          <ControlParam>
+            <Name>RowID</Name>
+            <Description>RowID</Description>
+          </ControlParam>
+        </ControlParams>
+      </BatchMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="14" Selected="True" />
+        <Tool ToolId="3" Selected="True" />
+        <Tool ToolId="1" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
