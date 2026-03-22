@@ -118,5 +118,5 @@ Start Alteryx Designer with **Administrator privileges**, open the workflow, and
 |:-----|:--------|:-------|
 | 2026/03/21 | 1.00 | Initial Release |
 
-## Contact Indormation
+## Contact Information
 Alteryx Community ([AkimasaKajitani](https://community.alteryx.com/t5/user/viewprofilepage/user-id/10936))
