@@ -116,6 +116,7 @@ Start Alteryx Designer with **Administrator privileges**, open the workflow, and
 ## History
 | Date | Version | Description |
 |:-----|:--------|:-------|
+| 2026/03/23| 1.01 | Update LLM Instruction |
 | 2026/03/21 | 1.00 | Initial Release |
 
 ## Contact Information
