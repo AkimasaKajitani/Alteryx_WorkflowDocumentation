@@ -47,7 +47,7 @@
       </GuiSettings>
       <Properties>
         <Configuration>
-          <Text><![CDATA[ Ver1.0 AkimasaKajitani ]]></Text>
+          <Text><![CDATA[ Ver1.01 AkimasaKajitani ]]></Text>
           <Font name="メイリオ" size="8.25" style="0" />
           <TextColor name="White" />
           <FillColor r="0" g="64" b="128" />
@@ -339,7 +339,7 @@ DesignerToolCategory ...</DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_68776_794e12d399a84d3c9bcd6da348f03129_\Engine_68776_c448609d6048491c8eadf16cd4eaab42~.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_55708_71baba63ffe244edb1e551b137c359ef_\Engine_55708_314177d71b1c4a11b50b7384da7a14c5~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -3071,12 +3071,11 @@ Definition</AnnotationText>
               <RecordInfo>
                 <Field name="___Record_ID___" source="RecordID: Starting Value=1" type="Int32" />
                 <Field name="Connection" size="19" type="V_String" />
-                <Field name="Wireless" size="4" type="V_String" />
                 <Field name="Origin" size="1" type="V_String" />
-                <Field name="Origin_ToolID" size="1" type="V_String" />
+                <Field name="Origin_ToolID" size="2" type="V_String" />
                 <Field name="Origin_Connection" size="6" type="V_String" />
                 <Field name="Destination" size="1" type="V_String" />
-                <Field name="Destination_ToolID" size="1" type="V_String" />
+                <Field name="Destination_ToolID" size="2" type="V_String" />
                 <Field name="Destination_Connection" size="5" type="V_String" />
               </RecordInfo>
             </MetaInfo>
@@ -3335,10 +3334,10 @@ Definition</AnnotationText>
                 <Field name="IsTemplate_value" size="5" type="V_String" />
                 <Field name="IsTemplate_OuterXML" size="27" type="V_String" />
                 <Field name="MetaInfo" size="117" type="V_String" />
-                <Field name="MetaInfo_OuterXML" size="688" type="V_String" />
+                <Field name="MetaInfo_OuterXML" size="692" type="V_String" />
                 <Field name="Events" size="12" type="V_String" />
                 <Field name="Events_OuterXML" size="52" type="V_String" />
-                <Field name="Properties_OuterXML" size="1537" type="V_String" />
+                <Field name="Properties_OuterXML" size="1541" type="V_String" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -3461,8 +3460,8 @@ Definition</AnnotationText>
                 <Field name="NameIsFileName" size="1" type="V_String" />
                 <Field name="NameIsFileName_value" size="4" type="V_String" />
                 <Field name="NameIsFileName_OuterXML" size="30" type="V_String" />
-                <Field name="Name" size="8" type="V_String" />
-                <Field name="Name_OuterXML" size="21" type="V_String" />
+                <Field name="Name" size="12" type="V_String" />
+                <Field name="Name_OuterXML" size="25" type="V_String" />
                 <Field name="Description" size="1" type="V_String" />
                 <Field name="Description_OuterXML" size="14" type="V_String" />
                 <Field name="RootToolName" size="1" type="V_String" />
@@ -3496,7 +3495,7 @@ Definition</AnnotationText>
                 <Field name="PlatformWorkflowId" size="1" type="V_String" />
                 <Field name="PlatformWorkflowId_value" size="1" type="V_String" />
                 <Field name="PlatformWorkflowId_OuterXML" size="30" type="V_String" />
-                <Field name="MetaInfo_OuterXML" size="688" type="V_String" />
+                <Field name="MetaInfo_OuterXML" size="692" type="V_String" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -3617,7 +3616,7 @@ Definition</AnnotationText>
                 <Field name="IsTemplate_value" size="5" type="V_String" />
                 <Field name="Events_OuterXML" size="52" type="V_String" />
                 <Field name="NameIsFileName_value" size="4" type="V_String" />
-                <Field name="MetaInfo_Name" size="8" type="V_String" />
+                <Field name="MetaInfo_Name" size="12" type="V_String" />
                 <Field name="MetaInfo_Description" size="1" type="V_String" />
                 <Field name="MetaInfo_RootToolName" size="1" type="V_String" />
                 <Field name="MetaInfo_ToolVersion" size="1" type="V_String" />
@@ -3713,7 +3712,7 @@ Definition</AnnotationText>
                 <Field name="IsTemplate_value" size="5" type="V_String" />
                 <Field name="Events_OuterXML" size="52" type="V_String" />
                 <Field name="NameIsFileName_value" size="4" type="V_String" />
-                <Field name="MetaInfo_Name" size="8" type="V_String" />
+                <Field name="MetaInfo_Name" size="12" type="V_String" />
                 <Field name="MetaInfo_Description" size="1" type="V_String" />
                 <Field name="MetaInfo_RootToolName" size="1" type="V_String" />
                 <Field name="MetaInfo_ToolVersion" size="1" type="V_String" />
@@ -3837,7 +3836,7 @@ ParentGuiSettings_Plugin = Null()
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_68776_794e12d399a84d3c9bcd6da348f03129_\Engine_68776_6eea7ec3469440da895f9df5687b4f1d~.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_55708_71baba63ffe244edb1e551b137c359ef_\Engine_55708_ed98dd58d2554dd1903f851ed34d7732~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -4127,7 +4126,7 @@ Workf...]]></DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_68776_794e12d399a84d3c9bcd6da348f03129_\Engine_68776_d95b9ce7992e4cf2a5189006334226f8~.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_55708_71baba63ffe244edb1e551b137c359ef_\Engine_55708_a4bdbe30d4df4484927b0a8f8a6a5349~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -5707,7 +5706,7 @@ Tools]]></DefaultAnnotationText>
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_68776_794e12d399a84d3c9bcd6da348f03129_\Engine_68776_de91419318bf4afcaf90a4cf66694a83~.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_55708_71baba63ffe244edb1e551b137c359ef_\Engine_55708_1306ba3736924c4087dc130e7798937e~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -6769,7 +6768,7 @@ Input overview</DefaultAnnotationText>
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_68776_794e12d399a84d3c9bcd6da348f03129_\Engine_68776_3f07084f2b1a46468088a31ba78b4836~.yxdb</TempFile>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_55708_71baba63ffe244edb1e551b137c359ef_\Engine_55708_8c6bbe495d3742d0afd8ef974175354a~.yxdb</TempFile>
                   <TempFileDataProfiling />
                   <Layout>
                     <ViewMode>Single</ViewMode>
@@ -6942,7 +6941,7 @@ ToolID - 昇順</DefaultAnnotationText>
               </GuiSettings>
               <Properties>
                 <Configuration>
-                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_68776_794e12d399a84d3c9bcd6da348f03129_\Engine_68776_f9f42f63cfa541de8cebf86b65ba61b6~.yxdb</TempFile>
+                  <TempFile>C:\ProgramData\Alteryx\Engine\Engine_55708_71baba63ffe244edb1e551b137c359ef_\Engine_55708_5518b8548dcf4f5c9c8cb42d2d0fdcad~.yxdb</TempFile>
                   <TempFileDataProfiling />
                   <Layout>
                     <ViewMode>Single</ViewMode>
@@ -7160,7 +7159,7 @@ ___Record_ID___=___Record_ID___
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_68776_794e12d399a84d3c9bcd6da348f03129_\Engine_68776_52cb2730f8264c1180b0f27769c6298e~.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_55708_71baba63ffe244edb1e551b137c359ef_\Engine_55708_17cad9bcb94e4729bedc283e6565297f~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -7615,13 +7614,13 @@ StyleTransparancy=StyleTransparancy
                 <Field name="AlteryxDocument" size="10" type="V_String" />
                 <Field name="yxmdVer" size="6" type="V_String" />
                 <Field name="RunE2" size="1" type="V_String" />
-                <Field name="Nodes" size="18" type="V_String" />
-                <Field name="Nodes_OuterXML" size="2055" type="V_String" />
-                <Field name="Connections" size="13" type="V_String" />
-                <Field name="Connections_OuterXML" size="312" type="V_String" />
+                <Field name="Nodes" size="58" type="V_String" />
+                <Field name="Nodes_OuterXML" size="8432" type="V_String" />
+                <Field name="Connections" size="33" type="V_String" />
+                <Field name="Connections_OuterXML" size="827" type="V_String" />
                 <Field name="Properties" size="113" type="V_String" />
-                <Field name="Properties_OuterXML" size="1537" type="V_String" />
-                <Field name="AlteryxDocument_OuterXML" size="3976" type="V_String" />
+                <Field name="Properties_OuterXML" size="1541" type="V_String" />
+                <Field name="AlteryxDocument_OuterXML" size="10872" type="V_String" />
               </RecordInfo>
             </MetaInfo>
           </Properties>
@@ -7911,17 +7910,16 @@ StyleTransparancy=StyleTransparancy
           <Properties>
             <Configuration>
               <FormulaFields>
-                <FormulaField expression="'# インストラクション&#xA;## 役割 / ミッション&#xA;あなたはAlteryxのXML解析およびドキュメント生成の専門家です。&#xA;ユーザーから提供されたXMLデータを分析し、JSON配列でレポートを出力してください。解説や挨拶などの会話は一切不要です。&#xA;&#xA;## あなたのタスク&#xA;以下のAlteryxワークフロー（XML）を分析し、詳細なレポートを作成してください。レポートの内容は、以下の通り３つのセクションで作成してください。&#xA;1. ワークフロー概要：ワークフロー全体の概要を記載します。&#xA;2. 入力データ・出力データ概要：入力データ、出力データについての概要します。&#xA;3. ワークフロー詳細：ワークフロー内で実行している内容について、セクションごとに解説します。各セクションごとに何を行っているか概要を述べたあとに、各ツールの詳細な説明を行ってください。詳細な説明は「ツール名」「ツールID」「ツールが行っている内容」の３つの項目に分けてテーブル形式で記載してください。「ツールが行っている内容」は、ツールの設定をそのまま使わずに言葉で表現してください。元のXMLタグを使わないでください。&#xA;&#xA;## 全体についての注意事項：&#xA;- 各ツールを表現する時は、一般的なツール名とツールIDを使ってください。ツールIDはツール名の後に括弧書きしてください。例：Filter(12)。　&#xA;- GuiSettings PluginなどのXML内の名称は使用禁止です。&#xA;'&#xA;+&quot;ファイル名:&quot;+[FileName]+&quot;&#xA;&quot;&#xA;+&quot;AlteryxWorkflow XML:&#xA;&quot;&#xA;+[Blob]+&#xA;'&#xA;## 1. 出力形式の厳守事項&#xA;出力は以下の仕様に従ったJSON配列のみとしてください。&#xA;1. row_id フィールドの必須化: 文章の順序を維持するため、最初の要素を 1 とし、出現順に連番（整数）を振った row_id フィールドを必ず含めてください。&#xA;2. 構造の定義: 各要素は type フィールドを持ち、以下のいずれかとしてください：&#xA;- heading: 見出し（level フィールドで 1〜3 を指定）&#xA;- text: 本文&#xA;- table: 表（header 配列と rows 2次元配列を含む）&#xA;&#xA;3. 禁止事項:&#xA;- HTMLタグやMarkdown装飾（**や#など）は一切含めないでください。&#xA;- JSON以外の説明文や挨拶は一切出力しないでください。&#xA;- 空の要素は作成しないでください。&#xA;&#xA;## 2. 配置・見切れ・改行対策（最重要） ##&#xA;- 挨拶、承諾の返事、解説の補足は厳禁。&#xA;- 一つの単語が長くなる場合は、ダブルクオテーションで囲まないでください。見切れることがあります。&#xA;- レポートのタイトルは不要です。&#xA;'&#xA;" field="Prompt" size="1073741823" type="V_WString" enabled="true" />
-                <FormulaField expression="IF [language]!=&quot;en&quot; THEN [Prompt]&#xA;ELSE&#xA;'# Instructions&#xA;## Role, Mission&#xA;You are an Alteryx XML parsing and document generation expert.&#xA;Analyze the XML data provided by the user and output a report in JSON array format. No explanations or greetings are necessary.&#xA;&#xA;## Your Task&#xA;Analyze the following Alteryx workflow (XML) and create a detailed report. The report should be structured into three sections as follows:&#xA;1. Workflow Overview: Provide an overview of the entire workflow.&#xA;2. Input/Output Data Overview: Provide an overview of the input and output data.&#xA;3. Workflow Details: Explain the actions performed within the workflow section by section. After outlining what each section does, provide a detailed explanation of each tool. The detailed explanation should be presented in a table format, divided into three items: &quot;Tool Name,&quot; &quot;Tool ID,&quot; and &quot;Processing Details&quot;. For &quot;Processing Details,&quot; please describe it in words, rather than using the tool settings directly. Do not use the original XML tags.&#xA;&#xA;## General Notes:&#xA;- When describing each tool, please use the common tool name and tool ID. The tool ID should be enclosed in parentheses after the tool name. Example: Filter(12).&#xA;- Names within XML, such as GuiSettings Plugin, are not allowed.&#xA;&#xA;Filename:'+[FileName]+'&#xA;&#xA;AlteryxWorkflow XML:'&#xA;+[Blob]+&#xA;'&#xA;# Output Formatting:&#xA;## 1. Strict Adherence to Output Format&#xA;Output must be a JSON array conforming to the following specifications.&#xA;1. Required row_id field: To maintain the order of the text, the first element must be assigned 1, and a row_id field with sequential numbers (integers) in order of appearance must be included.&#xA;2. Structure Definition: Each element must have a type field and be one of the following:&#xA;- heading: Heading (specify 1-3 in the level field)&#xA;- text: Body text&#xA;- table: Table (includes a header array and a two-dimensional rows array)&#xA;3. Prohibited Items:&#xA;- Do not include any HTML tags or Markdown formatting (**, #, etc.).&#xA;- Do not output any explanatory text or greetings other than JSON.&#xA;- Do not create empty elements.&#xA;&#xA;## 2. Layout, Cut-off, and Line Break Prevention (Most Important) ##&#xA;- Greetings, acknowledgments, and supplementary explanations are strictly prohibited.&#xA;- Do not enclose long words in double quotes. Some parts may be cut off.&#xA;- A report title is not required.'&#xA;ENDIF&#xA;" field="Prompt" size="1073741823" type="V_WString" enabled="true" />
+                <FormulaField expression="'# 役割 / ミッション&#xA;あなたはAlteryxのXML解析およびドキュメント生成の専門家です。&#xA;ユーザーから提供されたXMLデータを分析し、JSON配列でレポートを出力してください。解説や挨拶などの会話は一切不要です。&#xA;&#xA;# あなたのタスク&#xA;以下のAlteryxワークフロー（XML）を分析し、詳細なレポートを作成することトの内容は、以下の通り３つのセクションで作成すること。&#xA;1. ワークフロー概要：ワークフロー全体の概要を記載する&#xA;2. 入力データ・出力データ概要：入力データ、出力データについての概要を記載する&#xA;3. ワークフロー詳細：ワークフロー内で実行している内容について、セクションごとに解説。各セクションごとに何を行っているか概要を述べたあとに、各ツールの詳細な説明を行う。詳細な説明は「ツール名」「ツールID」「ツールが行っている内容」の３つの項目に分けてテーブル形式で記載する。「ツールが行っている内容」は、ツールの設定や元のXMLのタグを使わずに言葉で表現する。&#xA;&#xA;# 全体についての注意事項：&#xA;- 各ツールを表現する時は、一般的なツール名とツールIDを使うこと。ツールIDはツール名の後に括弧書きしてください。例：Filter(12)。ただし、表にツールIDという項目を作成する場合はカッコを付ける必要はない。　&#xA;- GuiSettings PluginなどのXML内の名称は使用禁止。&#xA;'&#xA;+&quot;ファイル名:&quot;+[FileName]+&quot;&#xA;&quot;&#xA;+&quot;AlteryxWorkflow XML:&#xA;```XML&quot;&#xA;+[Blob]+&#xA;'```&#xA;# 出力について&#xA;## 1. 出力形式の厳守事項&#xA;出力は以下の仕様に従ったJSON配列のみとすること。&#xA;1. row_id フィールドの必須化: 文章の順序を維持するため、最初の要素を 1 とし、出現順に連番（整数）を振った row_id フィールドを必ず含めること。&#xA;2. 構造の定義: 各要素は type フィールドを持ち、以下のいずれかとする：&#xA;- heading: 見出し（level フィールドで 1〜3 を指定）&#xA;- text: 本文&#xA;- table: 表（header 配列と rows 2次元配列を含む）&#xA;サンプル：&#xA;```JSON&#xA;[&#xA;  { &quot;row_id&quot;: 1, &quot;type&quot;: &quot;heading&quot;, &quot;level&quot;: 1, &quot;text&quot;: &quot;タイトル&quot; },&#xA;  { &quot;row_id&quot;: 2, &quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;ここには説明文が入ります。&quot; },&#xA;  { &#xA;    &quot;row_id&quot;: 3, &#xA;    &quot;type&quot;: &quot;table&quot;, &#xA;    &quot;header&quot;: [&quot;項目A&quot;, &quot;項目B&quot;], &#xA;    &quot;rows&quot;: [[&quot;データ1&quot;, &quot;データ2&quot;],[&quot;データ3&quot;, &quot;データ4&quot;]] &#xA;  }&#xA;]&#xA;```&#xA;3. 禁止事項:&#xA;- HTMLタグやMarkdown装飾（**や#など）は一切含めない。&#xA;- JSON以外の説明文や挨拶は一切出力しない。&#xA;- 空の要素は作成しない。&#xA;&#xA;## 2. 配置・見切れ・改行対策（最重要） ##&#xA;- 挨拶、承諾の返事、解説の補足は厳禁。&#xA;- 一つの単語が長くなる場合は、ダブルクオテーションで囲まないでください。見切れることがある。&#xA;- レポートのタイトルは不要。&#xA;'&#xA;" field="Prompt" size="1073741823" type="V_WString" enabled="true" />
+                <FormulaField expression="IF [language]!=&quot;en&quot; THEN [Prompt]&#xA;ELSE&#xA;'# Role, Mission&#xA;You are an Alteryx XML parsing and document generation expert.&#xA;Analyze the XML data provided by the user and output a report in JSON array format. No explanations or greetings are necessary.&#xA;&#xA;# Your Task&#xA;Analyze the following Alteryx workflow (XML) and create a detailed report. The report should be structured into three sections as follows:&#xA;1. Workflow Overview: Provide an overview of the entire workflow.&#xA;2. Input/Output Data Overview: Provide an overview of the input and output data.&#xA;3. Workflow Details: Explain the actions performed within the workflow section by section. After outlining what each section does, provide a detailed explanation of each tool. The detailed explanation should be presented in a table format, divided into three items: &quot;Tool Name,&quot; &quot;Tool ID,&quot; and &quot;Processing Details&quot;. For &quot;Processing Details,&quot; please describe it in words, rather than using the tool settings directly. Do not use the original XML tags.&#xA;&#xA;# General Notes:&#xA;- When describing each tool, please use the common tool name and tool ID. The tool ID should be enclosed in parentheses after the tool name. Example: Filter(12).&#xA;- Names within XML, such as GuiSettings Plugin, are not allowed.&#xA;&#xA;Filename:'+[FileName]+'&#xA;&#xA;AlteryxWorkflow XML:&#xA;```XML'&#xA;+[Blob]+&#xA;'```&#xA;# Output Formatting:&#xA;## 1. Strict Adherence to Output Format&#xA;Output must be a JSON array conforming to the following specifications.&#xA;1. Required row_id field: To maintain the order of the text, the first element must be assigned 1, and a row_id field with sequential numbers (integers) in order of appearance must be included.&#xA;2. Structure Definition: Each element must have a type field and be one of the following:&#xA;- heading: Heading (specify 1-3 in the level field)&#xA;- text: Body text&#xA;- table: Table (includes a header array and a two-dimensional rows array)&#xA;Sample output:&#xA;```JSON&#xA;[&#xA;  { &quot;row_id&quot;: 1, &quot;type&quot;: &quot;heading&quot;, &quot;level&quot;: 1, &quot;text&quot;: &quot;title&quot; },&#xA;  { &quot;row_id&quot;: 2, &quot;type&quot;: &quot;text&quot;, &quot;text&quot;: &quot;Here is the explanation.&quot; },&#xA;  { &#xA;    &quot;row_id&quot;: 3, &#xA;    &quot;type&quot;: &quot;table&quot;, &#xA;    &quot;header&quot;: [&quot;Column A&quot;, &quot;Column B&quot;], &#xA;    &quot;rows&quot;: [[&quot;data 1&quot;, &quot;data 2&quot;],[&quot;data3&quot;, &quot;data 4&quot;]] &#xA;  }&#xA;]&#xA;```&#xA;&#xA;3. Prohibited Items:&#xA;- Do not include any HTML tags or Markdown formatting (**, #, etc.).&#xA;- Do not output any explanatory text or greetings other than JSON.&#xA;- Do not create empty elements.&#xA;&#xA;## 2. Layout, Cut-off, and Line Break Prevention (Most Important) ##&#xA;- Greetings, acknowledgments, and supplementary explanations are strictly prohibited.&#xA;- Do not enclose long words in double quotes. Some parts may be cut off.&#xA;- A report title is not required.'&#xA;ENDIF&#xA;" field="Prompt" size="1073741823" type="V_WString" enabled="true" />
               </FormulaFields>
             </Configuration>
             <Annotation DisplayMode="0">
               <Name />
               <AnnotationText>Prompt</AnnotationText>
-              <DefaultAnnotationText>Prompt = '# インストラクション
-## 役割 / ミッション
+              <DefaultAnnotationText>Prompt = '# 役割 / ミッション
 あなたはAlteryxのXML解析およびドキュメント生成の専門家です。
-ユーザーから提供...</DefaultAnnotationText>
+ユーザーから提供されたXMLデータを分析し...</DefaultAnnotationText>
               <Left value="False" />
             </Annotation>
           </Properties>
@@ -8005,7 +8003,63 @@ StyleTransparancy=StyleTransparancy
           </Properties>
           <EngineSettings EngineDll="SdkEnginePlugin.dll" EngineDllEntryPoint="SdkEnginePlugin" />
         </Node>
-        <Node ToolID="381">
+        <Node ToolID="382">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="2166" y="2034" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_55708_71baba63ffe244edb1e551b137c359ef_\Engine_55708_e5da7e1422ae49929d131db48db618db~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>プロファイル</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="385">
+          <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+            <Position x="1974" y="2034" />
+          </GuiSettings>
+          <Properties>
+            <Configuration>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_55708_71baba63ffe244edb1e551b137c359ef_\Engine_55708_d4cc6e80867542c882220ec87d6ce708~.yxdb</TempFile>
+              <TempFileDataProfiling />
+              <Layout>
+                <ViewMode>Single</ViewMode>
+                <ViewSize value="100" />
+                <View1>
+                  <DefaultTab>プロファイル</DefaultTab>
+                  <Hints>
+                    <Table />
+                  </Hints>
+                </View1>
+                <View2 />
+              </Layout>
+            </Configuration>
+            <Annotation DisplayMode="0">
+              <Name />
+              <DefaultAnnotationText />
+              <Left value="False" />
+            </Annotation>
+          </Properties>
+          <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+        </Node>
+        <Node ToolID="386">
           <GuiSettings>
             <Position x="2178" y="1973" />
           </GuiSettings>
@@ -8454,7 +8508,7 @@ Response=Response
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_68776_794e12d399a84d3c9bcd6da348f03129_\Engine_68776_c4ddb36d0cac40848c40050a6e6229bf~.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_55708_71baba63ffe244edb1e551b137c359ef_\Engine_55708_6b59c6505ee9467ba7dab08b4257863d~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -8874,7 +8928,7 @@ Response=Response
           </GuiSettings>
           <Properties>
             <Configuration>
-              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_68776_794e12d399a84d3c9bcd6da348f03129_\Engine_68776_38c232bfe2f64a6b8c16bef012950145~.yxdb</TempFile>
+              <TempFile>C:\ProgramData\Alteryx\Engine\Engine_55708_71baba63ffe244edb1e551b137c359ef_\Engine_55708_90f613c52b2a4918ae22a542d5e8a369~.yxdb</TempFile>
               <TempFileDataProfiling />
               <Layout>
                 <ViewMode>Single</ViewMode>
@@ -9784,7 +9838,7 @@ Response=Response
       <Destination ToolID="278" Connection="Right" />
     </Connection>
     <Connection>
-      <Origin ToolID="381" Connection="Output62" />
+      <Origin ToolID="386" Connection="Output62" />
       <Destination ToolID="278" Connection="Left" />
     </Connection>
     <Connection>
@@ -9793,7 +9847,11 @@ Response=Response
     </Connection>
     <Connection>
       <Origin ToolID="349" Connection="Output" />
-      <Destination ToolID="381" Connection="Input1" />
+      <Destination ToolID="386" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="349" Connection="Output" />
+      <Destination ToolID="382" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="360" Connection="Output" />
@@ -9802,6 +9860,10 @@ Response=Response
     <Connection Wireless="True">
       <Origin ToolID="362" Connection="ModelConfig" />
       <Destination ToolID="361" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="360" Connection="Output" />
+      <Destination ToolID="385" Connection="Input" />
     </Connection>
     <Connection>
       <Origin ToolID="361" Connection="Output" />
