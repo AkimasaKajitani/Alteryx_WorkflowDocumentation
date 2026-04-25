@@ -16,11 +16,11 @@ As you can see, it provides a high-level overview, but it might feel a bit brief
 
 ## Report Samples
 The following samples were generated using Google Gemini.
-- [Weekly Challenge 447 solution file](https://github.com/AkimasaKajitani/Alteryx_WorkflowDocumentation/blob/main/sample_report/report_Challenge_447_solution_file.yxmd.pdf)
+- [Weekly Challenge 447 solution file](https://github.com/AkimasaKajitani/Alteryx_WorkflowDocumentation/blob/main/sample_report/report_Challenge_447_solution_file.yxmd_en.pdf)
     - An example solution for [Weekly Challenge 447](https://community.alteryx.com/t5/Weekly-Challenges/Challenge-447-Analysis-of-Survey-Results-Delivered-in-a/td-p/1331307) on the Alteryx Community. It analyzes survey results from a Jupyter Notebook.
-- [Advent of Code 2025 Day04](https://github.com/AkimasaKajitani/Alteryx_WorkflowDocumentation/blob/main/sample_report/report_Day04.yxmd.pdf)
+- [Advent of Code 2025 Day04](https://github.com/AkimasaKajitani/Alteryx_WorkflowDocumentation/blob/main/sample_report/report_Day04.yxmd_en.pdf)
     - A workflow solving [Day 4](https://adventofcode.com/2025/day/4) of [Advent Of Code](https://adventofcode.com/) 2025. This involves finding the number of accessible "@" symbols on an X,Y grid.
-- [Project Euler Problem 003](https://github.com/AkimasaKajitani/Alteryx_WorkflowDocumentation/blob/main/sample_report/report_Problem_0003.yxmd.pdf)
+- [Project Euler Problem 003](https://github.com/AkimasaKajitani/Alteryx_WorkflowDocumentation/blob/main/sample_report/report_Problem_0003.yxmd_en.pdf)
     - A workflow solving [Problem 3](https://projecteuler.net/problem=3) of [Project Euler](https://projecteuler.net/about). It calculates the largest prime factor of the number 600,851,475,143.
 
 ## Features
